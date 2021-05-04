@@ -31,6 +31,7 @@ class ChatViewController: UIViewController {
     // Pull up all of the current data that's inside our database, and then used it to populate our tableView
     func loadMessage()  {
         // addSnapshotListener: Cada vez que un mensaje es enviado, se ejecutara
+        //  Para mantener actualizados los datos de tus apps sin tener que recuperar toda la base de datos cada vez que haya una actualización, agrega agentes de escucha en tiempo real.
         db.collection(K.FStore.collectionName)
             .order(by: K.FStore.dateField)
             .addSnapshotListener { (querySnapShoot, error) in
