@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import IQKeyboardManagerSwift
+import IQKeyboardManagerSwift  // Library that prevent the keyboard covers the UITextField/UITextView when the keyboard is sliding up
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
